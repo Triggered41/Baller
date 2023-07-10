@@ -72,7 +72,7 @@ public class Simulator : MonoBehaviour
         if (thrown){
             thrown = false;
             rb.useGravity = true;
-            rb.AddForce(throwSpeed*cam.transform.forward+cam.transform.right*steer, ForceMode.Impulse);
+            rb.AddForce(throwSpeed*cam.transform.forward+cam.transform.right*steer+cam.transform.right*-spin, ForceMode.Impulse);
         }
 
         
